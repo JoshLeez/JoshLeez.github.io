@@ -1,0 +1,3 @@
+$('#navbar').localScroll({
+    target:'#about'
+ });

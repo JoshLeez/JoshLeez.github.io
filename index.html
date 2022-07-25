@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <link rel="icon" href="image/j_logo.png">
+  <title>Josh Lee</title>
+</head>
+<body style="background-color:#0a192f; margin:auto;">
+<div id="navbar">
+<img  src="image/j_logo.png" alt="mylogo" class="logo">
+<nav>
+  <a class="scrollTo" href="#about">About</a>
+  <a class="scrollTo" href="#contact">Contact</a>
+</nav>
+</div>
+<p class="introduction">Hi, my Name is</p>
+<h1 class="name">Josh Lee</h1>
+<h1 class="name1">I love building website</h1>
+<p class="paragraf">I Enjoy Programming and Learning new Tech. Currently i’m focusing <br> on improving my knowledge on javascript, front end, js framework  and library. </p>
+<a class="btn" href="https://www.youtube.com/channel/UCQxjdkSxedZyY36R9LBCVsA" target="_blank">Checkout my youtube channel</a>
+<div id="about">
+<h2 class="judul">About</h2>
+<div style="position:relative">
+  <a class="effectclick"></a>
+  <a class="rectangles"></a>
+  <a href="https://github.com/JoshLeez"><img src="image/joshlee.jpg" alt="myprofile" class="profile"></a>
+</div>
+<p class="paragraf">Hello, my name is Josh Lee. I’m currently Student in Universitas <br> Putera Batam with major as Information System. I enjoy creating<Br> web and programming, That's why i'm learning Full Stack Programming.</p>
+<p class="paragraf">I started programming when i get into college. My first Programming language<br>
+   is Python.I learn Data scientist which i don’t really enjoy then i found Front end<br>and back end which really caught my eyes, I’m still trying to learn more about front<br> end which i still haven’t fully master it.
+</p>
+<div class="paragraf">
+<p>Some Programming language I’ve been working with recently:</p>
+</div>
+<ul>
+  <li>Javascript</li>
+  <li>Node.js</li>
+  <li>HTML</li>
+  <li>CSS</li>
+</ul>
+</div>
+<div id="contact">
+<div>
+  <h2 class="judul">Contact Me</h2>
+</div>
+<p class="paragraf">I’m currently looking for opportunities, you can contact me wether is a about job 
+  <br>or some question that you wanna ask about me, feel free to contact me.</p>
+  <a href="https://www.facebook.com/profile.php?id=100006189002397" target="_blank">
+  <img class="positionimg" src="image/facebook.png" alt="facebooklogo">
+  </a>
+  <div class="contactme">Josh lee</div>
+  <a href="mailto:leejosh1602@gmail.com" target="_blank">
+  <img class="positionimg" src="image/gmail.png" alt="gmaillogo">
+  </a>
+  <div class="contactme">leejosh1602@gmail.com</div>
+  <a href="https://www.instagram.com/joshlee704/" target="_blank">
+  <img class="positionimg" src="image/instagram.png" alt="instagramlogo">
+  </a>
+  <div class="contactme">joshlee704</div>
+  <a href="https://www.linkedin.com/in/josh-lee-6522b1117/" target="_blank">
+  <img class="positionimg1" src="image/linkedin.png" alt="linkedinlogo">
+  </a>
+  <div class="contactme">Josh Lee</div>
+</div>
+<script>
+  var prevScrollpos = window.pageYOffset;
+
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-100px"; 
+    }
+    prevScrollpos = currentScrollPos;
+  }
+  var prevScrollpos = window.pageYOffset;
+
+  $('.scrollTo').click(function(){
+    var getElement = $(this).attr('href')
+    if($(getElement).length){
+      var getOffset= $(getElement).offset().top;
+      $('html,body').animate({
+        scrollTop: getOffset - targetDistance
+      },500);
+    }
+    return false;
+  });
+  </script>
+
+  <p class="credit"><a href="https://brittanychiang.com/" class="copyright">Although The Web is make by myself but the Design original is from by Brittany Chiang<br> You can Click me to go to her webpage</a></p>
+</body>
+</html>

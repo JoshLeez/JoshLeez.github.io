@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Fira Mono');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+.logo {
+    position:fixed;
+    top: 6ex;
+    left: 6ex;
+    opacity:1;
+}
+#navbar {
+    background-color: #06152c;
+    opacity:0.5;
+    padding-top:4%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    
+  }
+  
+  #navbar a {
+    float:right;
+    padding: 1%;
+    padding-right:8%;
+    font-family:fira mono;
+    color: #8892B0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+}
+  
+  #navbar a:hover {
+    color: #64FFDA;
+  }
+
+
+
+.introduction{
+    padding: 15% 0 0 30ex; 
+    padding-left:13.7% ;
+    font-size:12px;
+    margin:0;
+    color:#64FFDA;
+    font-weight: 400;
+    font-family:Fira Mono;
+}
+
+.name{
+    margin:0 0 0 13.7%; 
+    font-size: 47px;
+    color:#8892B0;
+    font-family: Lato;  
+    left:30px;
+}
+.name1{
+    margin:-1% 0 2.5% 13.7%; 
+    font-size: 47px;
+    color:#6E69AB;
+    font-family: Lato;  
+    left:30px;
+}
+.paragraf{
+    line-height: 1.5;
+    margin:0 0 4% 13.7%; 
+    font-size:17px;
+    color:#6E69AB;
+    font-weight: 400;
+    font-family: Lato;
+
+}
+.btn {
+    padding: 1% 1% 1% 1%;
+    margin: 20% 0 0 13.7%; 
+    font-size:12px;
+    border: #64FFDA  solid;
+    text-decoration:none;
+    font-family:Fira mono;
+    color:#64FFDA;
+    border-radius: 5px;
+    transition: 0.3s;
+    opacity: 0.6;
+}
+
+.btn:hover{
+    opacity: 1;
+    background-color: #218b7356;
+}
+
+.judul{
+    margin:20% 0 1.5% 13.7%; 
+    font-size: 25px;
+    color:#8892B0;
+    font-family: Lato;  
+}
+
+li{
+    line-height: 1.5;
+    padding:0;
+    margin:0% 0% 0% 13.7%; 
+    font-size:17px;
+    color:#6E69AB;
+    font-weight: 400;
+    font-family: Lato;
+}
+div p{
+    line-height: 1.5;
+    margin: 0% 0 -4% 0%;
+    font-size:17px;
+    color:#6E69AB;
+    font-weight: 400;
+    font-family: Lato;
+}
+
+.positionimg{
+    margin: 15px 0 0 28.1ex;
+    transition: 0.3s;
+    text-decoration: none;
+    opacity: 1;
+}
+.positionimg:hover{
+    opacity: 0.6;
+}
+
+.contactme{
+    margin-left: 24ex;
+    margin-top: -4.5ex;
+    padding-bottom: 3.5%;
+    font-size: 25px;
+    color:#8892B0;
+    font-family: Lato;  
+    vertical-align:top;
+}
+
+.positionimg1 {
+    text-decoration:none;
+    opacity: 1;
+    margin: 15px 0 0 29.3ex;
+    transition: 0.3s;
+}
+
+.positionimg1:hover{
+    opacity: 0.6;
+}
+
+.profile{
+    position:relative;
+    float: right;
+    right: 20ex;
+    width: 280px;
+    height: 285px;
+    transition: 0.3s;
+    opacity: 0.85  ;
+}
+.profile:hover{
+    opacity:1;
+}
+.effectclick{
+    border: 2px solid #64FFDA;
+    content:"";
+    position:absolute;
+    top:-2%;
+    padding-bottom: 2%;
+    display:flex;
+    align-items:center;
+    float: right;
+    right: 15ex;
+    margin:0;
+    width: 280px;
+    height: 285px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.effectclick::before{
+    content:'';
+    float:right;
+    align-items:center;
+    left: 10ex;
+    bottom:7px;
+    display:flex;
+    position:absolute;
+    width: 125px;
+    height:200%;
+    padding-bottom: 3%;
+    background: linear-gradient(#8892B0,#64FFDA);
+    animation: animate 4s linear infinite;
+
+}
+.effectclick::after{
+    content:"";
+    position:absolute;
+    inset:4px;
+    background:#0a192f;
+    border-radius:16px;
+}
+@keyframes animate {
+    0%
+    {
+        transform:rotate(0deg)
+    }
+    100%{
+        transform:rotate(360deg)
+    }
+}
+
+.rectangles{
+    position:absolute;
+    background-color:#64FFDA;
+    float: right;
+    right: 20ex;
+    width: 280px;
+    height: 285px;
+    transition: 0.3s;
+    opacity: 0.9;
+}
+.rectangles:hover{
+    opacity:0   ;
+    background-color:#64FFDA transparent;
+}
+
+.credit{
+    margin:5%;
+    text-align: center;
+    line-height: 1.5; 
+    font-size:17px;
+    color:#6E69AB;
+    font-weight: 400;
+    font-family: Fira mono;
+    display:'block';
+}
+
+.copyright{
+    text-decoration: none; 
+    color:#6E69AB;
+}
+.copyright:hover{
+    color:#9590c554;
+}
+
